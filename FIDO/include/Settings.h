@@ -7,15 +7,9 @@
 //
 
 //settingmacro(name, var, min, max, def)
-settingmacro("arbtimeout", arbTimeout, 1, 20, 10)
 
 settingmacro("behloopms", behLoopDelay, 100, 1000, 250)
 settingmacro("navloopms", navLoopDelay, 100, 1000, 250)
-
-settingmacro("rotationP", rotationP, 1, 1000, 10)
-settingmacro("movementP", movementP, 1, 1000, 10)
-settingmacro("maxspeed", maxSpeed, 5, 150, 20)
-settingmacro("maxrotatespeed", maxRotateSpeed, 5, 30, 20)
 
 settingmacro("hunger1", hunger1, 5, 15, 10)
 settingmacro("hunger0", hunger0, 5, 15, 11)

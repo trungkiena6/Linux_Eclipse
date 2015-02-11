@@ -29,9 +29,6 @@ void SetGlobal(lua_State *L, const char *name, float value);
 
 //broker
 int BrokerInit();
-//arbotix
-int ArbotixInit();
-void ArbotixProcessMessage(psMessage_t *msg);
 //navigator
 int NavigatorInit();
 void NavigatorProcessMessage(psMessage_t *msg);

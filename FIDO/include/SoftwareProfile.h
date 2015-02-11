@@ -6,8 +6,8 @@
 //  Copyright (c) 2014 Martin Lane-Smith. All rights reserved.
 //
 
-#ifndef Hex_SoftwareProfile_h
-#define Hex_SoftwareProfile_h
+#ifndef SoftwareProfile_h
+#define SoftwareProfile_h
 
 #define INIT_SCRIPT_PATH "/root/lua/init"
 #define BEHAVIOR_SCRIPT_PATH "/root/lua/behaviors"
@@ -21,31 +21,10 @@
 #define PS_UART_OVERLAY "BB-UART2"
 #define PS_UART_BAUDRATE B57600
 
-//ArbotixM uart
-//Rx P9_26
-//Tx P9_24
-#define ARB_UART_DEVICE "/dev/ttyO1"
-#define ARB_UART_OVERLAY "BB-UART1"
-#define ARB_UART_BAUDRATE B38400
-
-//LRF uart
-//Rx P9_11
-//Tx P9_13
-//#define LRF_UART_DEVICE "/dev/ttyO4"
-//#define LRF_UART_OVERLAY "BB-UART4",
-//#define LRF_UART_BAUDRATE B57600
-
-//GPS uart
-//Rx P8_38
-//Tx P8_37
-//#define GPS_UART_DEVICE "/dev/ttyO5"
-//#define GPS_UART_OVERLAY "BB-UART5",
-//#define GPS_UART_BAUDRATE B57600
-
 //Servo
 #define SERVO_PWM_KEY   "P9_14"
 
-//I2C Sonar
+//I2C Lidar
 #define SONAR_GPIO          61      //P8_26 GPIO1_29
 #define SONAR_I2C           2       //P9_19 (SCL), P9_20 (SDA)
 #define SONAR_I2C_ADDRESS   0x70
@@ -105,5 +84,10 @@ enum SensorType 						{MB1242, MB1000, ANALOG_IR};
 //Logging levels
 #define LOG_TO_SERIAL               LOG_ALL     //printed in real-time
 #define SYSLOG_LEVEL                LOG_ALL  	//published log
+
+#define MAX_ROUTINE 1
+#define MAX_INFO 1
+#define MAX_WARNING 1
+#define MAX_ERROR 10
 
 #endif

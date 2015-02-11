@@ -20,16 +20,16 @@ extern struct BatteryStruct {
 } battery;
 
 //(Goal) System State set by e.g. iOS App
-extern struct SystemStateStruct {
-    SysState_enum state;			//in MessageFormats.h
+extern struct SystemStateCommandStruct {
+	SystemStateCommand_enum state;			//in MessageFormats.h
     struct timeval atTime;
-} setSystemState;
+} systemStateCommand;
 
-//Current Fido State, responding to above
-extern struct FidoStateStruct {
-    FidoState_enum state;			//in FidoMessageFormats.h
+//Current Power State
+extern struct PowerStateStruct {
+	PowerState_enum state;			//in MessageFormats.h
     struct timeval atTime;
-} fidoSystemState;
+} powerState;
 
 //Fused Proximity analysis - from scanner
 //16 entries for all directions
