@@ -1,10 +1,10 @@
-Beaglebone Black source (Eclipse)
+eLinux source (Eclipse)
 
-Each robot has a Beaglebone Black.
+Fido has a Linux computer, Beaglebone Black.
 
 Code is developed in C using Eclipse.
 
-The toolchain is a Mac OSX-hosted cross-ARM GCC toolchain from www.carlson-minot.com
+The BBB toolchain is a Mac OSX-hosted cross-ARM GCC toolchain from www.carlson-minot.com
 
 The code is implemented as a single (multi-threaded) processes. 
 
